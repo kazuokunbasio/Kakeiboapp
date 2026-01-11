@@ -1,0 +1,19 @@
+<template>
+  <lightning-card title="支出状況" icon-name="standard:partner_marketing_budget">
+    <lightning-layout vertical-align="center">
+      <lightning-layout-item padding="around-small">
+        <div class="slds-text-title">支出</div>
+        <div class="slds-text-heading_medium">{totalExpense}</div>
+      </lightning-layout-item>
+
+      <lightning-layout-item padding="around-small" flexibility="auto, grow">
+        <lightning-progress-bar value={ratio} size="medium"></lightning-progress-bar>
+      </lightning-layout-item>
+
+      <lightning-layout-item padding="around-small">
+        <div class="slds-text-title">予算</div>
+        <div class="slds-text-heading_medium">{amount}</div>
+      </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>
